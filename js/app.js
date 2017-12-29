@@ -3,14 +3,14 @@ var select2LocalData = React.createElement(Select2, {
     selected:{ value: 0, text:'select an option'},
     items:[{
         value:1,
-        text:'Select this Option'
+        text:'Lvcios'
     },{
         value:2,
-        text:'Or this one'
+        text: 'mjswensen'
     },
     {
         value:3,
-        text:'You know what? Choose this one better'
+        text: 'sdras'
     }]
 })
 
