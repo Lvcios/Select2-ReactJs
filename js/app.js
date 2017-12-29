@@ -61,6 +61,6 @@ var remoteSearch = React.createElement('div', { className: 'row' },
                     )
                 )
             )
-var form = React.createElement('form',{}, localSearch, remoteSearch)
+var form = React.createElement('div',{}, localSearch, remoteSearch)
 
 ReactDOM.render(form, document.getElementById('app'))
