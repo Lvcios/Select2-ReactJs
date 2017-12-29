@@ -87,7 +87,6 @@ class Select2 extends React.Component {
             }
         }
         else {
-            console.log(this.state)
             this.setState({ 
                 helpText: 'Please enter 3 or more characters' ,
                 filteredResults:this.state.searchResults
