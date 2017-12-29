@@ -73,10 +73,9 @@ class Select2 extends React.Component {
         var searchValue = event.target.value
         if (searchValue.length >= 3) {
             this.setState({ helpText: 'Searching for ' + searchValue })
-            var regex = new RegExp('.' + searchValue + '.*')
             if(this.props.ajax == undefined || this.props.ajax == null){
                 var filteredSearchResults = this.state.searchResults.filter(function(item){
-                    return item.text.match(regex)
+                    return item.text.toLowerCase().indexOf(searchValue.toLowerCase()) >= 0
                 })
                 this.setState({
                     filteredResults:filteredSearchResults
